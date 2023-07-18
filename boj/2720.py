@@ -31,14 +31,14 @@ read = sys.stdin.readline
 
 n = int(read())
 
-moneys = [25, 10, 5, 1]
+money_list = [25, 10, 5, 1]
 
 for _ in range(n):
     a = int(read())
     r = []
     remain = a
-    for i in range(len(moneys)):
-        k = remain // moneys[i]
-        remain = remain % moneys[i]
+    for i in range(len(money_list)):
+        k = remain // money_list[i]
+        remain = remain % money_list[i]
         r.append(str(k))
     print(" ".join(r))
